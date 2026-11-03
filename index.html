@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: green;
+            color: white;
+        }
+
+        .edit {
+            background: orange;
+            color: white;
+        }
+
+        .delete {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Information System</h1>
+
+    <h2>Enter Student Information</h2>
+
+    <div style="text-align:center;">
+        <input type="text" id="firstname" placeholder="First Name">
+        <input type="text" id="middlename" placeholder="Middle Name">
+        <input type="text" id="lastname" placeholder="Last Name">
+        <input type="number" id="age" placeholder="Age" min="1">
+
+        <br>
+
+        <button onclick="saveRecord()">Save Record</button>
+    </div>
+
+    <h2>Records</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="records"></tbody>
+    </table>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
+
